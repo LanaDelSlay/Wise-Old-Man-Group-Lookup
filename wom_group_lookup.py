@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 import time
 
+# Put your groups auth code you got when creating the group into code, and put the groups' url into group url
 code = ''
 group_url='https://wiseoldman.net/groups/2059'
 new_service = Service(r'C:\chrome_driver\chromedriver.exe')
