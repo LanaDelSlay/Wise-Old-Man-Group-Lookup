@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 import time
 
-code = '366-144-697'
+code = ''
 group_url='https://wiseoldman.net/groups/2059'
 new_service = Service(r'C:\chrome_driver\chromedriver.exe')
 driver = webdriver.Chrome(service=new_service)
