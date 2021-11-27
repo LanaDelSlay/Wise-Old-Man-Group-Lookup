@@ -1,15 +1,18 @@
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome import service
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import time
 
-# Put your groups auth code you got when creating the group into code, and put the groups' url into group url
-# code should be numerical and look like this: 111-222-333 
-code = ''
-group_url='https://wiseoldman.net/groups/2059'
+code = '366-144-697'
+
+options = Options()
+options = Options()
+options.headless = True
 new_service = Service(r'C:\chrome_driver\chromedriver.exe')
-driver = webdriver.Chrome(service=new_service)
-driver.get(group_url)
+driver = webdriver.Chrome(service=new_service, chrome_options=options)
+driver.get("https://wiseoldman.net/groups/2059")
 
 # Click Update All Button
 time.sleep(2)
